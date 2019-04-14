@@ -1,0 +1,109 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+app-root {
+  height: 100%;
+  margin: auto;
+}
+.layoutBorder {
+border-radius: 8px;
+background-color: rgb(255, 255, 255);
+width: 80vw;
+height: 100%;
+margin: auto;
+}
+
+h1 {
+  width: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+i {
+  font-family: "Font Awesome 5 Free";
+  margin: 15px;
+  float: right;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.listDiv {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+
+}
+
+#spacer {
+  height: 10px;
+}
+
+.addButton {
+  color:  rgb(255, 255, 255);
+  background-color: rgb(17, 17, 65);
+  border-radius: 5px;
+  height: 40px;
+}
+
+input {
+  height: 40px;
+}
+
+.completeButton {
+  color:  rgb(17, 17, 65);
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(17, 17, 65);
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  margin: 15px;
+  
+}
+
+.complete {
+text-decoration: line-through;
+}
+

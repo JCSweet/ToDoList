@@ -1,0 +1,21 @@
+<div class='layoutBorder'>
+  <h1>To Do List</h1>
+  <p>A place to store the things you have to do!</p>
+  <form action="/action_page.php">
+    <input type='text' name='filter' placeholder="Filter your to-dos">
+  </form>
+  <div class='listDiv' style="text-align:center">
+    <ul>
+      <li *ngFor="let item of toDo; let i = index">
+          <button (click) = "completeTask(i)" *ngIf="!item.completed" class='completeButton' type='button'>Complete</button>
+          <span [ngClass]= "{'complete': item.completed === true}" class= 'listItem'>{{ item.task }}</span>
+          <i (click)= "removeTask(i) *ngIf" class="fas fa-times"></i>
+      </li>
+    </ul>
+  </div>
+  <div class='inputDiv'>
+    <input type="text" placeholder="To Do" [(ngModel)]='taskInput'/>
+    <div id='spacer'></div>
+    <button (click)="addTask()" class="addButton">Add</button>
+  </div>
+</div>
