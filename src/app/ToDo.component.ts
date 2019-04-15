@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
 import { FormsModule } from '@angular/forms';
+import { FilterPipe } from 'ngx-filter-pipe';
 
 interface Item {
   task: string;
@@ -23,6 +24,11 @@ export class AppComponent {
     { task: 'Meal Prep', completed: false },
     { task: 'Water Plants', completed: false },
   ];
+  toDoFilter: any = {task: ''};
+
+  constructor(private filterPipe: FilterPipe) {
+    console.log(filterPipe.transform(this.toDo, { task: ''}));
+  }
 
   addTask = () => {
     const newToDo = {
