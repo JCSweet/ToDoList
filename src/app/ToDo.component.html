@@ -7,6 +7,7 @@
   <div class='listDiv' style="text-align:center">
     <ul>
       <li *ngFor="let item of toDo; let i = index">
+          <span class= "numberOfIndex">{{ i+1 }}</span>
           <button (click) = "completeTask(i)" *ngIf="!item.completed" class='completeButton' type='button'>Complete</button>
           <span [ngClass]= "{'complete': item.completed === true}" class= 'listItem'>{{ item.task }}</span>
           <i (click)= "removeTask(i) *ngIf" class="fas fa-times"></i>

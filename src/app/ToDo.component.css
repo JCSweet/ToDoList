@@ -1,5 +1,6 @@
 * {
   font-family: 'Poppins', sans-serif;
+  
 }
 
 app-root {
@@ -32,7 +33,7 @@ ul {
 
 i {
   font-family: "Font Awesome 5 Free";
-  margin: 15px;
+  margin: 5px;
   float: right;
 }
 li {
@@ -40,13 +41,14 @@ li {
   justify-content: space-between;
   align-content: center;
   width: 100%;
+  font-size: small;
 }
 
 .listItem {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
-  width: 100%;
+  margin: 5px;
+  width: 80%;
 }
 
 .list {
@@ -96,10 +98,10 @@ input {
   border-style: solid;
   border-color: rgb(17, 17, 65);
   background-color: rgb(255, 255, 255);
-  height: 40px;
-  width: 90px;
+  height: 30px;
+  width: 80px;
   border-radius: 5px;
-  margin: 15px;
+  margin: 5px;
   
 }
 
@@ -107,3 +109,26 @@ input {
 text-decoration: line-through;
 }
 
+.numberOfIndex {
+  margin: 5px;
+  float: left;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .completeButton {
+    margin: 15px;
+  }
+  
+  .numberOfIndex {
+    margin: 15px;
+  }
+
+  i {
+    margin: 15px;
+  }
+
+  .listItem {
+    margin: 15px;
+  }
+}

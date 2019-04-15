@@ -19,7 +19,7 @@ export class AppComponent {
   completedInput: boolean;
 
   toDo: Item[] = [
-    { task: 'Groceries', completed: false },
+    { task: 'Clean', completed: false },
     { task: 'Meal Prep', completed: false },
     { task: 'Water Plants', completed: false },
   ];
